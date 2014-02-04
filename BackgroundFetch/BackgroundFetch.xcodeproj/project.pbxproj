@@ -19,6 +19,7 @@
 		814FD8D818A162EF00249C57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814FD8C018A162EF00249C57 /* UIKit.framework */; };
 		814FD8E018A162EF00249C57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 814FD8DE18A162EF00249C57 /* InfoPlist.strings */; };
 		814FD8E218A162EF00249C57 /* BackgroundFetchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 814FD8E118A162EF00249C57 /* BackgroundFetchTests.m */; };
+		814FD8ED18A164A300249C57 /* CHDishesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 814FD8EC18A164A300249C57 /* CHDishesController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		814FD8DD18A162EF00249C57 /* BackgroundFetchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BackgroundFetchTests-Info.plist"; sourceTree = "<group>"; };
 		814FD8DF18A162EF00249C57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		814FD8E118A162EF00249C57 /* BackgroundFetchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundFetchTests.m; sourceTree = "<group>"; };
+		814FD8EB18A164A300249C57 /* CHDishesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDishesController.h; sourceTree = "<group>"; };
+		814FD8EC18A164A300249C57 /* CHDishesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDishesController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 		814FD8C218A162EF00249C57 /* BackgroundFetch */ = {
 			isa = PBXGroup;
 			children = (
+				814FD8EB18A164A300249C57 /* CHDishesController.h */,
+				814FD8EC18A164A300249C57 /* CHDishesController.m */,
 				814FD8CB18A162EF00249C57 /* CHAppDelegate.h */,
 				814FD8CC18A162EF00249C57 /* CHAppDelegate.m */,
 				814FD8CE18A162EF00249C57 /* Images.xcassets */,
@@ -242,6 +247,7 @@
 			files = (
 				814FD8C918A162EF00249C57 /* main.m in Sources */,
 				814FD8CD18A162EF00249C57 /* CHAppDelegate.m in Sources */,
+				814FD8ED18A164A300249C57 /* CHDishesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
