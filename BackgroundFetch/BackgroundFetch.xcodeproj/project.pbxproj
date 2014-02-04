@@ -455,6 +455,7 @@
 				814FD8E718A162EF00249C57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		814FD8E818A162EF00249C57 /* Build configuration list for PBXNativeTarget "BackgroundFetchTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +464,7 @@
 				814FD8EA18A162EF00249C57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

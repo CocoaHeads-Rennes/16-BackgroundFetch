@@ -44,4 +44,18 @@
     }
 }
 
+//6
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    //7
+    //Foward background invocation from remote notification
+    if([userInfo[@"aps"][@"content-available"] boolValue])
+    {
+        [self application:application performFetchWithCompletionHandler:completionHandler];
+    }
+    
+    //Be careful this won't fire up your app if the user kill it from the app switcher
+    //http://stackoverflow.com/questions/19068762/ios-7-background-fetch-by-push-notification-will-ios-launch-my-app-if-it-is-no
+}
+
 @end
