@@ -34,4 +34,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - Instance Methods
 
+//4
+- (void)loadNewContentWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
+
 @end

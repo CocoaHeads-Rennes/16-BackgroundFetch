@@ -197,6 +197,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "David Bonnet";
 				TargetAttributes = {
+					814FD8B818A162EF00249C57 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					814FD8D318A162EF00249C57 = {
 						TestTargetID = 814FD8B818A162EF00249C57;
 					};

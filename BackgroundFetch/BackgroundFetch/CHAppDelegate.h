@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class CHDishesController;
+
 @interface CHAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UIWindow              *window;
+@property (strong, nonatomic) CHDishesController    *dishesController;
 
 @end

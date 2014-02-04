@@ -132,6 +132,16 @@
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - Public methods
 
+//5
+- (void)loadNewContentWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    [self loadNewDishes];
+    if(completionHandler)
+    {
+        completionHandler(self.numberOfNewPosts ? UIBackgroundFetchResultNewData : UIBackgroundFetchResultNoData);
+    }
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - Private methods
 
