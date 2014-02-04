@@ -98,8 +98,7 @@
     self.title = @"Recettes Gourmandes";
     
     // Do any additional setup after loading the view from its nib.
-    [self loadNewDishes];
-    self.numberOfNewPosts = 0;
+    [self.dishes addObject:self.dishesDb[[self getRandomNumberBetween:0 to:[self.dishesDb count] - 1]]];
 }
 
 -(void)viewDidUnload
@@ -136,7 +135,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - Private methods
 
--(int)getRandomNumberBetween:(int)from to:(int)to {
+-(int)getRandomNumberBetween:(int)from to:(int)to
+{
     return (int)from + arc4random() % (to-from+1);
 }
 
@@ -145,7 +145,7 @@
 
 - (void)loadNewDishes
 {
-    self.numberOfNewPosts = [self getRandomNumberBetween:1 to:4];
+    self.numberOfNewPosts = [self getRandomNumberBetween:0 to:4];
     
     NSLog(@"%d new fetched object(s)",self.numberOfNewPosts);
     for(int i = 0; i < self.numberOfNewPosts; i++)
